@@ -8,7 +8,7 @@ public class FindMin {
     private int minPosition;
     private final Controller controller;
 
-    public FindMin(int firstIndex, int lastIndex, int[] array, int id, Controller controller) {
+    public FindMin(int firstIndex, int lastIndex, int[] array, Controller controller) {
         this.firstIndex = firstIndex;
         this.lastIndex = lastIndex;
         this.array = array;

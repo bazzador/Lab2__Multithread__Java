@@ -18,7 +18,7 @@ public class Controller {
         Thread[] threads = new Thread[findMinThreadNum];
 
         for (int i = 0; i < findMinThreadNum; i++) {
-            FindMin findMinThread = new FindMin(ranges[i][0], ranges[i][1], array, i, this);
+            FindMin findMinThread = new FindMin(ranges[i][0], ranges[i][1], array, this);
             findMinThreads[i] = findMinThread;
             threads[i] = new Thread(findMinThread::start);
             threads[i].start();
